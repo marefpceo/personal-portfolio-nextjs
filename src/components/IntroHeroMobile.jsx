@@ -1,7 +1,7 @@
 export default function IntroHeroMobile() {
   
   return (
-    <div>
+    <div className='h-full'>
       <div className='flex flex-col gap-4'>
         <p className='text-3xl text-nature-light indent-4'>Hi, I'm </p>
         <h1 className='text-nature-accent text-4xl'>Lamar Stevens</h1>
