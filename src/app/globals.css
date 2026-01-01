@@ -5,6 +5,13 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-nature-accent: #E9762B;
+  --color-nature-dark: #0D4715;
+  --color-nature-alt: #41644a;
+  --color-nature-light: #ebe1d1;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
