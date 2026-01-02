@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo1 from '../../public/Logo1.svg';
 import { RxHamburgerMenu } from 'react-icons/rx'
 
-export default function MobileHeader({ openMenuModal }) {
+export default function Header({ openMenuModal }) {
 
   return (
     <header className='p-2 flex justify-between'>
@@ -15,7 +15,7 @@ export default function MobileHeader({ openMenuModal }) {
         width={120}
       />
       <RxHamburgerMenu 
-        className='text-nature-light size-6 mx-6 my-2' 
+        className='text-nature-light size-6 mx-6 my-2 md:hidden' 
         onClick={openMenuModal}
       />
     </header>

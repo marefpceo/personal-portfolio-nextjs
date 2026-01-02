@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import MobileHeader from '@/components/MobileHeader';
+import Header from '@/components/Header';
 import MenuModal from '@/components/MenuModal';
 import IntroHeroMobile from '@/components/IntroHeroMobile';
 import AboutSection from '@/components/AboutSection';
@@ -25,7 +25,7 @@ export default function Home() {
           open={menuModalOpen}
           closeMenuModal={closeMenuModal}
         />
-        <MobileHeader 
+        <Header 
           openMenuModal={openMenuModal}
         />
         <div className='flex flex-1 justify-center items-center'>
