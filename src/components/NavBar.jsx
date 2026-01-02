@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function NavBar() {
 
   return (
@@ -5,9 +7,9 @@ export default function NavBar() {
       <ul className='w-full flex gap-8 text-lg items-center justify-center [&>li]:w-full [&>li]:text-center
         [&>li]:hover:text-nature-accent'
       >
-        <li><a href='#about'>About</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#contact'>Contact</a></li>
+        <li><Link href='/#about'>About</Link></li>
+        <li><Link href='#projects'>Projects</Link></li>
+        <li><Link href='#contact'>Contact</Link></li>
       </ul>
     </nav>
   )

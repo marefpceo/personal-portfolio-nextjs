@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Logo1 from '../../public/Logo1.svg';
 import { RxHamburgerMenu } from 'react-icons/rx'
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 export default function Header({ openMenuModal }) {
 
