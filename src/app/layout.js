@@ -1,14 +1,9 @@
-import { Geist, Geist_Mono, REM } from "next/font/google";
+import { Geist_Mono, REM } from "next/font/google";
 import "./globals.css";
 
 const remSans = REM({
   subsets: ["latin"],
 })
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
