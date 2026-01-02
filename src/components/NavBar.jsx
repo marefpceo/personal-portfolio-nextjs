@@ -5,9 +5,9 @@ export default function NavBar() {
       <ul className='w-full flex gap-8 text-lg items-center justify-center [&>li]:w-full [&>li]:text-center
         [&>li]:hover:text-nature-accent'
       >
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#projects'>Projects</a></li>
+        <li><a href='#contact'>Contact</a></li>
       </ul>
     </nav>
   )

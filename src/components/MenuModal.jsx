@@ -19,9 +19,9 @@ export default function MenuModal({ open, closeMenuModal }) {
             onClick={closeMenuModal}
           />
           <ul className='mx-4 mt-8 p-4 flex flex-col items-center text-2xl gap-8 '>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contacts</li>
+            <li><a href='#about' onClick={closeMenuModal}>About</a></li>
+            <li><a href='#projects' onClick={closeMenuModal}>Projects</a></li>
+            <li><a href='#contact' onClick={closeMenuModal}>Contacts</a></li>
           </ul>
         </div>
       </nav>
