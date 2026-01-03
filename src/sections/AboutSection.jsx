@@ -1,3 +1,5 @@
+import TechStackDiv from '@/components/TechStackDiv'
+
 export default function AboutSection() {
 
   return (
@@ -9,7 +11,8 @@ export default function AboutSection() {
     
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic, quae iusto minus quis dicta magnam eligendi officiis deleniti veritatis error id impedit ipsum repellendus dolor, doloremque sit, dignissimos tempore.</p>
       
-      <div className="stack-icons"></div>
+      <TechStackDiv />
+      
     </section>
   )
 }
