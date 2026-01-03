@@ -16,21 +16,21 @@ import githubIcon from '../../public/icons/GitHub.svg';
 export default function TechStackDiv() {
 
   const icons = [htmlIcon, cssIcon, javascriptIcon, nodeIcon, reactIcon, viteIcon, nextIcon, 
-    postgresIcon, tailwindIcon, gitIcon, githubIcon
+    postgresIcon, tailwindIcon, gitIcon
   ];
 
   return (
-    <div className='flex flex-wrap basis-1/2 p-8 gap-6 border rounded-2xl border-nature-accent
-      justify-center items-center'
+    <div className='my-8 p-8 w-3/4 grid grid-cols-3 gap-6 border rounded-2xl border-nature-accent
+      justify-center items-center md:grid-cols-5'
     >
       {icons.map(icon => (
         <Image 
-          className='size-1/4'
           key={uuidv4()}
           src={icon}
           alt={`${icon} icon`}
+          width={75}
         />
       ))}
     </div>
-  )
+  );
 }
