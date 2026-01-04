@@ -22,8 +22,8 @@ export default function Carousel({ children }) {
   };
 
   return (
-    <div className="carousel-container overflow-hidden w-full relative">
-      <div className="carousel-wrapper flex relative">
+    <div className="carousel-container overflow-hidden w-full h-full relative">
+      <div className="carousel-wrapper flex h-4/6 relative">
        
         <div ref={carouselRef} className='carousel-content-wrapper overflow-hidden w-full'>
           <div 
@@ -38,14 +38,20 @@ export default function Carousel({ children }) {
           </div>
         </div>
       </div>
-      <button onClick={prevSlide} className='left-arrow  bg-black
-        text-white p-2.5 z-50'>
-        &#10094;
-      </button>
-      <button onClick={nextSlide} className='right-arrow  bg-black
-        text-white p-2.5 z-50'>
-        &#10095;
-      </button>
+      <div className='h-1/4 items-center justify-center flex gap-16'>
+        <button onClick={prevSlide} className='left-arrow w-16 p-2.5 z-50 rounded-4xl bg-nature-dark 
+          border  border-nature-light/50 text-nature-accent shadow-[0_0_8px_0] 
+          shadow-nature-accent'
+        >
+          &#10094;
+        </button>
+        <button onClick={nextSlide} className='right-arrow w-16 p-2.5 z-50 rounded-4xl bg-nature-dark
+          border  border-nature-light/50 text-nature-accent shadow-[0_0_8px_0] 
+          shadow-nature-accent'
+        >
+          &#10095;
+        </button>
+      </div>
     </div>
   )
 
