@@ -18,7 +18,7 @@ export default function MenuModal({ open, closeMenuModal }) {
             className='absolute right-4 top-4 text-nature-accent' size={24}
             onClick={closeMenuModal}
           />
-          <ul className='mx-4 mt-8 p-4 flex flex-col items-center text-2xl gap-8 '>
+          <ul className='mx-4 mt-8 p-4 flex flex-col items-center text-lg gap-8 '>
             <li><a href='#about' onClick={closeMenuModal}>About</a></li>
             <li><a href='#projects' onClick={closeMenuModal}>Projects</a></li>
             <li><a href='#contact' onClick={closeMenuModal}>Contacts</a></li>
