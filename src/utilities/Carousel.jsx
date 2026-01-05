@@ -38,7 +38,7 @@ export default function Carousel({ children }) {
           </div>
         </div>
       </div>
-      <div className='h-1/4 items-center justify-center flex gap-16'>
+      <div className='mt-12 h-1/4 items-center justify-center flex gap-16'>
         <button onClick={prevSlide} className='left-arrow w-16 p-2.5 z-50 rounded-4xl bg-nature-dark 
           border  border-nature-light/50 text-nature-accent shadow-[0_0_8px_0] 
           shadow-nature-accent'

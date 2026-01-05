@@ -10,6 +10,8 @@
   --color-nature-dark: #0D4715;
   --color-nature-alt: #41644a;
   --color-nature-light: #ebe1d1;
+
+  --breakpoint-xs: 30rem;
 }
 
 @theme inline {
