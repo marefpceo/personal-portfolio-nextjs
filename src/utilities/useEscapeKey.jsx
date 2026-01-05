@@ -6,7 +6,7 @@ export default function useEscapeKey(handleClose) {
       if (e.key === 'Escape') {
         handleClose();
       }
-    };
+    }
 
     document.addEventListener('keydown', handleKeyDown);
 
@@ -14,4 +14,4 @@ export default function useEscapeKey(handleClose) {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [handleClose]);
-};
+}

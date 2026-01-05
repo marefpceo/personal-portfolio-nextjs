@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: var(--color-nature-dark);
@@ -6,8 +6,8 @@
 }
 
 @theme {
-  --color-nature-accent: #E9762B;
-  --color-nature-dark: #0D4715;
+  --color-nature-accent: #e9762b;
+  --color-nature-dark: #0d4715;
   --color-nature-alt: #41644a;
   --color-nature-light: #ebe1d1;
 

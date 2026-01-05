@@ -12,24 +12,27 @@ import tailwindIcon from '../../public/icons/Tailwind CSS.svg';
 import gitIcon from '../../public/icons/Git.svg';
 import githubIcon from '../../public/icons/GitHub.svg';
 
-
 export default function TechStackDiv() {
-
-  const icons = [htmlIcon, cssIcon, javascriptIcon, nodeIcon, reactIcon, viteIcon, nextIcon, 
-    postgresIcon, tailwindIcon, gitIcon
+  const icons = [
+    htmlIcon,
+    cssIcon,
+    javascriptIcon,
+    nodeIcon,
+    reactIcon,
+    viteIcon,
+    nextIcon,
+    postgresIcon,
+    tailwindIcon,
+    gitIcon,
   ];
 
   return (
-    <div className='my-8 p-8 w-3/4 grid grid-cols-3 gap-6 border rounded-2xl border-nature-accent
+    <div
+      className='my-8 p-8 w-3/4 grid grid-cols-3 gap-6 border rounded-2xl border-nature-accent
       justify-center items-center md:grid-cols-5'
     >
-      {icons.map(icon => (
-        <Image 
-          key={uuidv4()}
-          src={icon}
-          alt={`${icon} icon`}
-          width={75}
-        />
+      {icons.map((icon) => (
+        <Image key={uuidv4()} src={icon} alt={`${icon} icon`} width={75} />
       ))}
     </div>
   );
