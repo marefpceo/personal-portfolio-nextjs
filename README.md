@@ -189,7 +189,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,7 +229,7 @@ Project Link: [https://github.com/marefpceo/personal-portfolio-nextjs](https://g
 [issues-shield]: https://img.shields.io/github/issues/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
 [issues-url]: https://github.com/marefpceo/personal-portfolio-nextjs/issues
 [license-shield]: https://img.shields.io/github/license/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
-[license-url]: https://github.com/marefpceo/personal-portfolio-nextjs/blob/master/LICENSE.txt
+[license-url]: https://github.com/marefpceo/personal-portfolio-nextjs/blob/develop/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
