@@ -6,7 +6,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 
 
 
@@ -66,8 +66,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- 
+[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<div align='center'>
+  <img src='./public/mobile_screenshot.webp' height='300'>
+  <img src='./public//tablet_screenshot.webp' width='300'>
+</div>
 
 Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
 
@@ -220,19 +224,19 @@ Project Link: [https://github.com/marefpceo/personal-portfolio-nextjs](https://g
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/marefpceo/personal-portfolio-nextjs?style=for-the-badge
 [contributors-url]: https://github.com/marefpceo/personal-portfolio-nextjs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/marefpceo/personal-portfolio-nextjs?style=for-the-badge
 [forks-url]: https://github.com/marefpceo/personal-portfolio-nextjs/network/members
-[stars-shield]: https://img.shields.io/github/stars/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/marefpceo/personal-portfolio-nextjs?style=for-the-badge
 [stars-url]: https://github.com/marefpceo/personal-portfolio-nextjs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/marefpceo/personal-portfolio-nextjs?style=for-the-badge
 [issues-url]: https://github.com/marefpceo/personal-portfolio-nextjs/issues
-[license-shield]: https://img.shields.io/github/license/marefpceo/personal-portfolio-nextjs.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/marefpceo/personal-portfolio-nextjs?style=for-the-badge
 [license-url]: https://github.com/marefpceo/personal-portfolio-nextjs/blob/develop/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: /public/mobile_screenshot.webp
 <!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
