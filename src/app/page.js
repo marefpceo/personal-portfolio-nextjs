@@ -8,6 +8,7 @@ import IntroHeroMobile from '@/components/IntroHeroMobile';
 import AboutSection from '@/sections/AboutSection';
 import ProjectsSection from '@/sections/ProjectsSection';
 import ContactSection from '@/sections/ContactSection';
+import Footer from '@/sections/Footer';
 
 export default function Home() {
   const [menuModalOpen, setMenuModalOpen] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
+        <Footer />
       </div>
     </div>
   );
