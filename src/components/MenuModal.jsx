@@ -1,10 +1,13 @@
 'use client';
 
+import useLockBodyScroll from '@/hooks/useLockBodyScroll';
 import useEscapeKey from '@/hooks/useEscapeKey';
 import { RiCloseLargeFill } from 'react-icons/ri';
 
 export default function MenuModal({ open, closeMenuModal }) {
   const showMenu = open === true ? 'flex' : 'hidden';
+
+  useLockBodyScroll(open);
 
   useEscapeKey(closeMenuModal);
 
