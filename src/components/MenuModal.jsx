@@ -10,9 +10,9 @@ export default function MenuModal({ open, closeMenuModal }) {
 
   return (
     <div
-      className={`${showMenu} bg-nature-dark/85  absolute min-h-full w-full z-50`}
+      className={`${showMenu} bg-nature-dark/85  absolute min-h-lvh w-full z-50`}
     >
-      <nav className={`absolute right-0 w-1/2 p-2 bg-nature-alt`}>
+      <nav className={` w-full p-2 bg-nature-alt`}>
         <div>
           <RiCloseLargeFill
             className='absolute right-4 top-4 text-nature-accent'

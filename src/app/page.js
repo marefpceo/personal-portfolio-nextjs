@@ -21,6 +21,7 @@ export default function Home() {
     setMenuModalOpen(false);
   }
 
+  // TODO Add functionality to disable scroll when MenuModal is open
   return (
     <div className='flex flex-col min-h-screen items-center justify-center font-sans'>
       <div className='container max-w-5xl'>
