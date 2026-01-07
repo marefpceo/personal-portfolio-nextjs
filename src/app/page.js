@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import Header from '@/sections/Header';
 import MenuModal from '@/components/MenuModal';
@@ -10,8 +10,41 @@ import ProjectsSection from '@/sections/ProjectsSection';
 import ContactSection from '@/sections/ContactSection';
 import Footer from '@/sections/Footer';
 
+import { sectionIds } from '@/utilities/sectionIds';
+
 export default function Home() {
   const [menuModalOpen, setMenuModalOpen] = useState(false);
+  const observerRefs = useRef([]);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    function observerCallback(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const newHash = `#${entry.target.id}`;
+          window.history.replaceState(null, '', newHash);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if(element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    }
+  }, []);
 
   function openMenuModal() {
     setMenuModalOpen(true);
@@ -22,6 +55,7 @@ export default function Home() {
   }
 
   // TODO Add functionality to disable scroll when MenuModal is open
+
   return (
     <div className='flex flex-col min-h-screen items-center justify-center font-sans'>
       <div className='container max-w-5xl'>
@@ -32,7 +66,7 @@ export default function Home() {
             <IntroHeroMobile />
           </div>
         </main>
-        <AboutSection />
+        <AboutSection id='about' />
         <ProjectsSection />
         <ContactSection />
         <Footer />

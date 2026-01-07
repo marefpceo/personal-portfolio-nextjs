@@ -1,9 +1,9 @@
 import TechStackDiv from '@/components/TechStackDiv';
 
-export default function AboutSection() {
+export default function AboutSection({ id }) {
   return (
     <section
-      id='about'
+      id={id}
       className='py-6 px-4 h-full flex flex-col gap-8 items-center bg-nature-light 
       min-w-full text-nature-dark text-center'
     >
