@@ -1,10 +1,10 @@
 import ProjectCard from '@/components/ProjectCard';
 import Carousel from '@/utilities/Carousel';
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ id }) {
   return (
     <section
-      id='projects'
+      id={id}
       className='py-6 px-2 min-h-lvh flex flex-col gap-8 items-center 
     bg-nature-alt text-nature-light'
     >

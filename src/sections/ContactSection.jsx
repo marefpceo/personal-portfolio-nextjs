@@ -1,8 +1,8 @@
 import Button from '@/components/Button';
 
-export default function ContactSection() {
+export default function ContactSection({ id }) {
   return (
-    <section id='contact' className='py-6 px-2 min-h-lvh flex flex-col items-center bg-nature-dark text-nature-light'>
+    <section id={id} className='py-6 px-2 min-h-lvh flex flex-col items-center bg-nature-dark text-nature-light'>
       <h2 className='mb-8 text-center text-3xl'>Contact</h2>
 
       <div className='mt-10 w-3/4 flex flex-col gap-8'>

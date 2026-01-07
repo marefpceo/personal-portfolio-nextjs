@@ -70,8 +70,8 @@ export default function Home() {
           </div>
         </main>
         <AboutSection id='about' />
-        <ProjectsSection />
-        <ContactSection />
+        <ProjectsSection id='projects'/>
+        <ContactSection id='contact' />
         <Footer />
       </div>
     </div>
