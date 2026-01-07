@@ -1,3 +1,5 @@
+import Button from '@/components/Button';
+
 export default function ContactSection() {
   return (
     <section id='contact' className='py-6 px-2 min-h-lvh flex flex-col items-center bg-nature-dark text-nature-light'>
@@ -9,7 +11,9 @@ export default function ContactSection() {
       </div>
 
       <div className='mt-8'>
-        <button type="button">Submit</button>
+        <Button
+          style={'p-1 w-28 rounded-lg bg-nature-alt text-nature-light border-nature-accent/75 border'}
+        >Submit</Button>
       </div>
     </section>
   );
