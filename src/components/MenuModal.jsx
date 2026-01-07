@@ -1,6 +1,6 @@
 'use client';
 
-import useEscapeKey from '@/utilities/useEscapeKey';
+import useEscapeKey from '@/hooks/useEscapeKey';
 import { RiCloseLargeFill } from 'react-icons/ri';
 
 export default function MenuModal({ open, closeMenuModal }) {
