@@ -27,7 +27,12 @@ export default function Home() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const newHash = `#${entry.target.id}`;
-          window.history.replaceState(null, '', newHash);
+          if (newHash === '#top') {
+            window.history.replaceState(null, '', '/');
+          } else {
+            window.history.replaceState(null, '', newHash);
+          }
+          
         }
       });
     };
@@ -59,7 +64,7 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen items-center justify-center font-sans'>
       <div className='container max-w-5xl'>
-        <main className='flex min-h-screen w-full flex-col justify-center'>
+        <main id={'top'} className='flex min-h-screen w-full flex-col justify-center'>
           <MenuModal open={menuModalOpen} closeMenuModal={closeMenuModal} />
           <Header openMenuModal={openMenuModal} />
           <div className='flex flex-1 justify-center items-center'>
