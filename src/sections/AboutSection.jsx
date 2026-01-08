@@ -4,7 +4,7 @@ export default function AboutSection({ id }) {
   return (
     <section
       id={id}
-      className='py-6 px-4 h-full flex flex-col gap-8 items-center bg-nature-light 
+      className='py-6 px-4 min-h-lvh flex flex-col gap-8 items-center bg-nature-light 
       min-w-full text-nature-dark text-center'
     >
       <h2 className='text-3xl mt-4'>About</h2>
