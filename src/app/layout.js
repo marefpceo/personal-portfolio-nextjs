@@ -2,6 +2,7 @@ import { Geist_Mono, REM } from 'next/font/google';
 import './globals.css';
 
 const remSans = REM({
+  variable: '--font-rem-sans',
   subsets: ['latin'],
 });
 
