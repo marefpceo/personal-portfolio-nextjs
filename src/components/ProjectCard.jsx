@@ -4,7 +4,7 @@ import TechTextBubble from './TechTextBubble';
 export default function ProjectCard({ projectImage }) {
   return (
     <div
-      className='mt-2 p-4 w-4/5 min-h-3/5 flex flex-col items-center gap-4 border rounded-2xl bg-nature-light 
+      className='mt-2 p-4 max-w-3/4 min-h-3/5 flex flex-col items-center gap-4 border rounded-2xl bg-nature-light 
       text-nature-dark border-nature-accent shadow-sm shadow-nature-dark md:flex-row md:even:flex-row-reverse
       md:w-11/12'
     >
