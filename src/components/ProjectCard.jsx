@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import TechTextBubble from './TechTextBubble';
 
-export default function ProjectCard({ projectImage }) {
+export default function ProjectCard({projectImage, projectObject }) {
   return (
     <div
       className='mt-2 p-4 max-w-3/4 min-h-3/5 flex flex-col items-center gap-4 border rounded-2xl bg-nature-light 
@@ -9,7 +9,7 @@ export default function ProjectCard({ projectImage }) {
       md:w-11/12'
     >
       <Image
-        className='my-2 w-11/12 md:max-w-1/4 rounded-xl shadow-sm shadow-nature-alt'
+        className='my-2 w-11/12 md:max-w-1/4 rounded-sm shadow-sm shadow-nature-alt'
         loading='eager'
         src={projectImage}
         alt={'placeholder'}
