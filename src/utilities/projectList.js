@@ -4,8 +4,14 @@ export const projectList = [
     projectDescription: 'Description of project',
     projectImage: '/lastStopShop.webp',
     projectImageUrl: '/lastStopShop.webp',
-    projectUrl: 'https://react-shopping-cart-4ft.pages.dev/',
-    projectSourceCode: 'https://github.com/marefpceo/react-shopping-cart',
+    projectLinks: [{
+      name: 'Live Demo',
+      url: 'https://react-shopping-cart-4ft.pages.dev/',
+    },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/marefpceo/react-shopping-cart',
+    }],
     techStack: ['React', 'Vite', 'CSS'],
   },
   {
@@ -13,8 +19,14 @@ export const projectList = [
     projectDescription: 'Express Inventory App is an inventory management web application designed for a fictitious grocery store. The app makes use of CRUD methods for managing, maintaining and updating the store\'s inventory. The app aims to give users a quick and efficient way view and manage inventories, organizing items by categories and subcategories',
     projectImage: '/expressInventoryApp.webp',
     projectImageUrl: '/expressInventoryApp.webp',
-    projectUrl: '#',
-    projectSourceCode: 'https://github.com/marefpceo/express-inventory-app-v2',
+    projectLinks: [{
+      name: 'Live Demo',
+      url: '#',
+    },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/marefpceo/express-inventory-app-v2',
+    }],
     techStack: ['NodeJS', 'ExpressJS', 'PostgreSQL', 'EJS'],
   },
   {
@@ -22,8 +34,14 @@ export const projectList = [
     projectDescription: 'Blog API is a project used to create a blog site using an API only backend and two different front-ends for accessing and editing blog posts.',
     projectImage: '/blogClientHome.webp',
     projectImageUrl: '/blogClientHome.webp',
-    projectUrl: 'https://blog-api-c9w.pages.dev/',
-    projectSourceCode: 'https://github.com/marefpceo/blog-api',
+    projectLinks: [{
+      name: 'Live Demo',
+      url: 'https://blog-api-c9w.pages.dev/',
+    },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/marefpceo/blog-api'
+    }],
     techStack: ['React', 'Vite', 'Tailwind', 'ExpressJS'],
   },
   {
@@ -31,8 +49,14 @@ export const projectList = [
     projectDescription: 'Blog API is a project used to create a blog site using an API only backend and two different front-ends for accessing and editing blog posts.',
     projectImage: '/blogAdminLogin.webp',
     projectImageUrl: '/blogAdminLogin.webp',
-    projectUrl: 'https://blog-api-admin.pages.dev/login',
-    projectSourceCode: 'https://github.com/marefpceo/blog-api',
+    projectLinks: [{
+      name: 'Live Demo',
+      url: 'https://blog-api-admin.pages.dev/login',
+    },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/marefpceo/blog-api',
+    }],
     techStack: ['React', 'Vite', 'Tailwind', 'ExpressJS'],
   },
   {
@@ -40,8 +64,15 @@ export const projectList = [
     projectDescription: 'Messaging app TOP',
     projectImage: '/mchatLogo.webp',
     projectImageUrl: '/messagingHome.webp',
-    projectUrl: '#',
-    projectSourceCode: 'https://github.com/marefpceo/messaging-app-server',
+    projectLinks: [
+      {
+      name: 'Live Demo',
+      url: '#',
+    },
+    {
+      name: 'Source Code',
+      url: 'https://github.com/marefpceo/messaging-app-server'
+    }],
     techStack: ['NodeJS', 'ExpressJS', 'PostgreSQL', 'Prisma ORM'],
   }
 ];

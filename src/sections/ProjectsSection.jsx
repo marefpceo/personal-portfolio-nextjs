@@ -22,8 +22,7 @@ export default function ProjectsSection({ id }) {
             projectImage={project.projectImage} 
             projectDescription={project.projectDescription}
             techStack={project.techStack}
-            projectSourceCode={project.projectSourceCode}
-            projectUrl={project.projectUrl}
+            projectLinks={project.projectLinks}
           />
         ))
       }
@@ -39,8 +38,7 @@ export default function ProjectsSection({ id }) {
                   projectImage={project.projectImage}
                   projectDescription={project.projectDescription}
                   techStack={project.techStack}
-                  projectSourceCode={project.projectSourceCode}
-                  projectUrl={project.projectUrl}
+                  projectLinks={project.projectLinks}
                 />
               </div>
             ))
