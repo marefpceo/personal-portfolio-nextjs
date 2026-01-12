@@ -1,9 +1,10 @@
 import ProjectCard from '@/components/ProjectCard';
 import Carousel from '@/utilities/Carousel';
-import Image from 'next/image';
-import lastStopShop from '../../public/last_stop_shop.webp';
+import { projectList } from '@/utilities/projectList';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ProjectsSection({ id }) {
+  
   return (
     <section
       id={id}
@@ -13,26 +14,37 @@ export default function ProjectsSection({ id }) {
       <h2 className='mb-8 text-center text-3xl'>Projects</h2>
 
       <div className='mb-16 flex flex-col items-center gap-16 not-md:hidden'>
-        <ProjectCard projectImage={lastStopShop} />
-        <ProjectCard projectImage={'/image_placeholder.png'} />
-        <ProjectCard projectImage={'/image_placeholder.png'} />
-        <ProjectCard projectImage={'/image_placeholder.png'} />
+      {
+        projectList.map(project => (
+          <ProjectCard 
+            key={uuidv4()}
+            projectTitle={project.projectTitle} 
+            projectImage={project.projectImage} 
+            projectDescription={project.projectDescription}
+            techStack={project.techStack}
+            projectSourceCode={project.projectSourceCode}
+            projectUrl={project.projectUrl}
+          />
+        ))
+      }
       </div>
 
       <div className='md:hidden w-full'>
         <Carousel>
-          <div className='flex justify-center'>
-            <ProjectCard projectImage={lastStopShop} />
-          </div>
-          <div className='flex justify-center'>
-            <ProjectCard projectImage={'/image_placeholder.png'} />
-          </div>
-          <div className='flex justify-center'>
-            <ProjectCard projectImage={'/image_placeholder.png'} />
-          </div>
-          <div className='flex justify-center'>
-            <ProjectCard projectImage={'/image_placeholder.png'} />
-          </div>
+          {
+            projectList.map(project => (
+              <div className="flex justify-center" key={uuidv4()}>
+                <ProjectCard
+                  projectTitle={project.projectTitle}
+                  projectImage={project.projectImage}
+                  projectDescription={project.projectDescription}
+                  techStack={project.techStack}
+                  projectSourceCode={project.projectSourceCode}
+                  projectUrl={project.projectUrl}
+                />
+              </div>
+            ))
+          }
         </Carousel>
       </div>
     </section>
