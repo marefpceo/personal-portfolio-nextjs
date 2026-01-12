@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function Carousel({ children }) {
@@ -23,7 +25,7 @@ export default function Carousel({ children }) {
 
   return (
     <div className="carousel-container overflow-hidden w-full h-full relative">
-      <div className="carousel-wrapper flex h-4/6 relative">
+      <div className="carousel-wrapper flex h-3/4 relative">
        
         <div ref={carouselRef} className='carousel-content-wrapper overflow-hidden w-full'>
           <div 
@@ -38,7 +40,7 @@ export default function Carousel({ children }) {
           </div>
         </div>
       </div>
-      <div className='my-12 h-1/4 items-center justify-center flex gap-16'>
+      <div className='my-6 h-1/4 items-center justify-center flex gap-16'>
         <button onClick={prevSlide} className='left-arrow w-16 p-2.5 z-50 rounded-4xl bg-nature-dark 
           border  border-nature-light/50 text-nature-accent shadow-[0_0_8px_0] 
           shadow-nature-accent'
