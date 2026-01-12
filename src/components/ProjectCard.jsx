@@ -1,7 +1,9 @@
 'use client'
 
+import Link from 'next/link';
 import Image from 'next/image';
 import TechTextBubble from './TechTextBubble';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ProjectCard({ projectTitle, projectImage, projectDescription, techStack, projectSourceCode, projectUrl }) {
   return (
@@ -19,11 +21,15 @@ export default function ProjectCard({ projectTitle, projectImage, projectDescrip
         height={746}
       />
       <div className='flex flex-col gap-3 items-center'>
-        <h3 className='text-xl'>{projectTitle}</h3>
-        <span className='flex gap-4 flex-wrap'>
-          <TechTextBubble text={'Test 1'} />
-          <TechTextBubble text={'Test 2'} />
-          <TechTextBubble text={'Test 3'} />
+        <h3 className='text-2xl'>{projectTitle}</h3>
+        <span className='my-3 flex gap-4 flex-wrap'>
+        {
+          techStack.map(tech => (
+            <TechTextBubble 
+              key={uuidv4()}
+              text={tech} />
+          ))
+        }
         </span>
         <p className='text-center text-sm'>
           {projectDescription}
