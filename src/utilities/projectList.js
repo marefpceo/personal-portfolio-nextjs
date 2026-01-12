@@ -38,7 +38,7 @@ export const projectList = [
   {
     projectTitle: 'mChat Messaging',
     projectDescription: 'Messaging app TOP',
-    projectImage: '/messagingHome.webp',
+    projectImage: '/mchatLogo.webp',
     projectImageUrl: '/messagingHome.webp',
     projectUrl: '#',
     projectSourceCode: 'https://github.com/marefpceo/messaging-app-server',
