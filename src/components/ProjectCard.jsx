@@ -55,7 +55,7 @@ export default function ProjectCard({ projectTitle, projectImage, projectDescrip
           ))
         }
         </span>
-        <p className='my-2 text-center text-sm overflow-y-scroll'>
+        <p className='my-2 text-center text-sm overflow-y-scroll no-scrollbar'>
           {projectDescription}
         </p>
         <span className='flex flex-col gap-2 md:hidden md:mt-2'>
