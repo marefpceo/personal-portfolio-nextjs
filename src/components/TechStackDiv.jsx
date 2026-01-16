@@ -10,7 +10,6 @@ import nextIcon from '../../public/icons/Next.js.svg';
 import postgresIcon from '../../public/icons/PostgresSQL.svg';
 import tailwindIcon from '../../public/icons/Tailwind CSS.svg';
 import gitIcon from '../../public/icons/Git.svg';
-import githubIcon from '../../public/icons/GitHub.svg';
 
 export default function TechStackDiv() {
   const icons = [
