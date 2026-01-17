@@ -13,7 +13,7 @@ export default function Footer() {
             src={github}
             alt='Github contact button'
             width={25}
-            height={25}
+            height={'auto'}
           />
         </Link>
         <Link href={'https://www.linkedin.com/in/lamarstevens'} target='_blank'>
@@ -21,7 +21,7 @@ export default function Footer() {
             src={linkedIn}
             alt='LinkedIn contact button'
             width={25}
-            height={25}
+            height={'auto'}
           />
         </Link>
       </div>

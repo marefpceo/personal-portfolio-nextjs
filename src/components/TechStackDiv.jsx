@@ -27,11 +27,11 @@ export default function TechStackDiv() {
 
   return (
     <div
-      className='my-8 p-8 w-3/4 grid grid-cols-3 gap-6 border rounded-2xl border-nature-accent
+      className='my-8 p-8 w-3/4 grid grid-cols-3 gap-6 border rounded-2xl border-nature-accent/25
       justify-center items-center md:grid-cols-5'
     >
       {icons.map((icon) => (
-        <Image key={uuidv4()} src={icon} alt={`${icon} icon`} width={75} />
+        <Image key={uuidv4()} src={icon} alt={`${icon} icon`} width={64} />
       ))}
     </div>
   );
