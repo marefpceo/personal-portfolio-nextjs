@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   turbopack: {
-    root: '/home/marefpceo/repos/personal/personal-portfolio-nextjs/',
+    root: '/home/marefpceo/repos/personal',
   },
   images: {
     remotePatterns: [
