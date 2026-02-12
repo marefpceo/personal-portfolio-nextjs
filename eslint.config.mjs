@@ -1,5 +1,6 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
+import { defineConfig, globalIgnores } from 'eslint/config';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import eslintNextPlugin from '@next/eslint-plugin-next';
 import prettier from 'eslint-config-prettier/flat';
 
 const eslintConfig = defineConfig([
@@ -8,11 +9,22 @@ const eslintConfig = defineConfig([
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
   ]),
+  {
+    files: ['**/*.{js,jsx,ts,tsx'],
+    plugins: {
+      next: eslintNextPlugin,
+    },
+    settings: {
+      next: {
+        rootDir: 'packages/personal-portfolio-nextjs',
+      },
+    },
+  },
 ]);
 
 export default eslintConfig;
