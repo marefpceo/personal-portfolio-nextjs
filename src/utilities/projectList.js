@@ -1,7 +1,8 @@
 export const projectList = [
   {
     projectTitle: 'Last Stop Shop',
-    projectDescription: 'Description of project',
+    projectDescription:
+      'The purpose of this project was to create a simple shopping cart using React to show proficiency in basic concepts.',
     projectImage: '/lastStopShop.webp',
     projectImageUrl: '/lastStopShop.webp',
     projectLinks: [
@@ -25,7 +26,7 @@ export const projectList = [
     projectLinks: [
       {
         name: 'Live Demo',
-        url: '#',
+        url: 'https://express-inventory-app-v2-production.up.railway.app/',
       },
       {
         name: 'Source Code',
